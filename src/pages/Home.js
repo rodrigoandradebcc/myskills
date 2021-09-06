@@ -31,12 +31,12 @@ export function Home() {
           onChangeText={setNewSkill}
         />
 
-        <Button />
+        <Button onPress={handleAddNewSkill} />
 
         <Text style={[styles.title, {marginVertical: 50}]}>My Skills</Text>
 
         {mySkills.map((skill, index) => (
-          <SkillCard />
+          <SkillCard skill={skill} />
         ))}
       </SafeAreaView>
     </>
