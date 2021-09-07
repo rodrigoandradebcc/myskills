@@ -1,12 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
+  FlatList,
   Platform,
   SafeAreaView,
-  StatusBar,
   StyleSheet,
   Text,
   TextInput,
-  FlatList,
 } from 'react-native';
 import {Button} from '../components/Button';
 import {SkillCard} from '../components/SkillCard';
@@ -34,7 +33,6 @@ export function Home() {
 
   return (
     <>
-      <StatusBar translucent backgroundColor="transparent" />
       <SafeAreaView style={styles.container}>
         <Text style={styles.title}>Welcome Rodrigo</Text>
 
